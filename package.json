@@ -1,0 +1,36 @@
+{
+  "name": "accordion",
+  "version": "0.0.1",
+  "description": "Generate an animated accordion",
+  "author": "John King",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            [
+              "@babel/preset-env",
+              {
+                "useBuiltIns": "usage",
+                "corejs": 3.9
+              }
+            ]
+          ]
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "domready": "git+https://github.com/3bound/domready.git",
+    "folktale": "^2.3.2",
+    "funTools": "git+https://github.com/3bound/funTools.git",
+    "ramda": "^0.27.1",
+    "velocity-animate": "^1.5.2"
+  }
+}
